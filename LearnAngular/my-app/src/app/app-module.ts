@@ -20,6 +20,8 @@ import { FirstComponent } from './first-component/first.component';
 import { ProductDropdownListComponent } from './product-dropdown-list-component/product-dropdown-list-component';
 import { ProductListCallServiceComponent } from './product-list-call-service-component/product-list-call-service-component';
 import { ProductListCallHttpServiceComponent } from './product-list-call-http-service-component/product-list-call-http-service-component';
+import { ServiceProductImageEvent } from './BTVN/Bai13/service-product-image-event/service-product-image-event';
+import { ServiceProductImageEventDetail } from './BTVN/Bai13/service-product-image-event-detail/service-product-image-event-detail';
 
 @NgModule({
   declarations: [
@@ -38,6 +40,8 @@ import { ProductListCallHttpServiceComponent } from './product-list-call-http-se
     ProductDropdownListComponent,
     ProductListCallServiceComponent,
     ProductListCallHttpServiceComponent,
+    ServiceProductImageEvent,
+    ServiceProductImageEventDetail,
   ],
   imports: [BrowserModule, CommonModule, AppRoutingModule, FormsModule],
   providers: [provideBrowserGlobalErrorListeners(), provideHttpClient(withInterceptorsFromDi())],

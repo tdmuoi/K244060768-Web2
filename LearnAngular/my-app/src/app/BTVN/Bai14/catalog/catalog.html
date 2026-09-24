@@ -1,0 +1,32 @@
+<p>Bài 14 - Product Catalog</p>
+<table border="1">
+  <tbody *ngFor="let c of categories">
+    <tr>
+      <td>Ma Danh Muc</td>
+      <td>Ten Danh Muc</td>
+    </tr>
+    <tr>
+      <td>{{c.CateId}}</td>
+      <td>{{c.CateName}}</td>
+    </tr>
+    <tr>
+      <td colspan="4">
+        <table border="1" width="100%">
+          <tr>
+            <td>Ma San Pham</td>
+            <td>Ten San Pham</td>
+            <td>Gia San Pham</td>
+            <td>Picture</td>
+          </tr>
+          <tr *ngFor="let p of c.Products">
+            <td>{{p.ProductId}}</td>
+            <td>{{p.ProductName}}</td>
+            <td>{{p.Price}}</td>
+            <td><img src="{{p.Image}}" width="80"></td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </tbody>
+</table>
+

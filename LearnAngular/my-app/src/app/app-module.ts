@@ -22,6 +22,7 @@ import { ProductListCallServiceComponent } from './product-list-call-service-com
 import { ProductListCallHttpServiceComponent } from './product-list-call-http-service-component/product-list-call-http-service-component';
 import { ServiceProductImageEvent } from './BTVN/Bai13/service-product-image-event/service-product-image-event';
 import { ServiceProductImageEventDetail } from './BTVN/Bai13/service-product-image-event-detail/service-product-image-event-detail';
+import { Catalog } from './BTVN/Bai14/catalog/catalog';
 
 @NgModule({
   declarations: [
@@ -42,6 +43,7 @@ import { ServiceProductImageEventDetail } from './BTVN/Bai13/service-product-ima
     ProductListCallHttpServiceComponent,
     ServiceProductImageEvent,
     ServiceProductImageEventDetail,
+    Catalog,
   ],
   imports: [BrowserModule, CommonModule, AppRoutingModule, FormsModule],
   providers: [provideBrowserGlobalErrorListeners(), provideHttpClient(withInterceptorsFromDi())],

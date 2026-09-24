@@ -1,0 +1,7 @@
+.price-valid {
+  color: green;
+}
+
+.price-invalid {
+  color: red;
+}

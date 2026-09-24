@@ -1,0 +1,25 @@
+<p>3.3. Cách triệu gọi Service</p>
+
+<label>Min Price: <input type="number" [(ngModel)]="minPrice" /></label>
+<label>Max Price: <input type="number" [(ngModel)]="maxPrice" /></label>
+<button (click)="doFilter()">Lọc</button>
+
+<table border="1">
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Name</th>
+      <th>Price</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let p of products">
+      <td>{{ p.id }}</td>
+      <td>{{ p.name }}</td>
+      <td>{{ p.price }}</td>
+    </tr>
+    <tr *ngIf="products.length === 0">
+      <td colspan="3">No products available.</td>
+    </tr>
+  </tbody>
+</table>

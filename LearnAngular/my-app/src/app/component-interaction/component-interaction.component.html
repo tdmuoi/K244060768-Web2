@@ -1,0 +1,11 @@
+<h2>2.3. Component Interaction</h2>
+
+<p *ngIf="childData">
+  Data from child component: {{ childData | json }}
+</p>
+
+<!-- Nhúng Child Component, truyền parentData xuống và lắng nghe childEvent lên -->
+<app-first
+  [parentData]="parentData"
+  (childEvent)="onReceiveChild($event)">
+</app-first>

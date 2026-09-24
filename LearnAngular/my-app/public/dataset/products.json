@@ -1,0 +1,7 @@
+[
+  { "id": 1, "name": "Iphone 18", "price": 3000, "image": "https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/i/p/iphone-18-pro-01_5.jpg" },
+  { "id": 2, "name": "Samsung Galaxy S21", "price": 2500, "image": "https://cdn2.cellphones.com.vn/insecure/rs:fill:0:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/s/m/sm-g990_s21fe_backfront_lv_8_2_2.png" },
+  { "id": 3, "name": "Xiaomi 11", "price": 2000, "image": "https://cdn2.cellphones.com.vn/insecure/rs:fill:0:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/x/i/xiaomi-redmi-note-17-purple.jpg" },
+  { "id": 4, "name": "Macbook Pro", "price": 2800, "image": "https://cdn2.cellphones.com.vn/insecure/rs:fill:0:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/t/e/text_ng_n_2__11_1.png" },
+  { "id": 5, "name": "Lenovo ThinkPad", "price": -100, "image": "https://cdn2.cellphones.com.vn/insecure/rs:fill:0:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/s/s/ssss_1__59_1.png" }
+]

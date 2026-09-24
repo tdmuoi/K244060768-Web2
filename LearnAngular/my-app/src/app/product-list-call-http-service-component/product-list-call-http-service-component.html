@@ -1,0 +1,20 @@
+<p>product-list-call-http-service-component works!</p>
+Min Price: <input type="number" [(ngModel)]="minPrice" placeholder="Min Price">
+Max Price: <input type="number" [(ngModel)]="maxPrice" placeholder="Max Price">
+<button (click)="doFilter()">Filter</button>
+
+<h2>Danh sách sản phẩm</h2>
+<table border="1">
+  <tr>
+    <th>ID</th>
+    <th>Tên sản phẩm</th>
+    <th>Giá</th>
+    <th>Hình ảnh</th>
+  </tr>
+  <tr *ngFor="let p of products()">
+    <td>{{ p.id }}</td>
+    <td>{{ p.name }}</td>
+    <td [class.price-invalid]="p.price < 0" [class.price-valid]="p.price >= 0">{{ p.price }}</td>
+    <td><img [src]="p.image" alt="{{ p.name }}" width="100"></td>
+  </tr>
+</table>

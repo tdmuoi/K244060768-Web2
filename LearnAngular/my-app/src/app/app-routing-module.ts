@@ -15,6 +15,7 @@ import { ProductHttpHandleErrorServiceComponent } from './product-http-handle-er
 import { ServiceProductImageEvent } from './BTVN/Bai13/service-product-image-event/service-product-image-event';
 import { ServiceProductImageEventDetail } from './BTVN/Bai13/service-product-image-event-detail/service-product-image-event-detail';
 import { Catalog } from './BTVN/Bai14/catalog/catalog';
+import { ProductDetailComponent } from './product-detail-component/product-detail-component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'contact', pathMatch: 'full' },
@@ -33,6 +34,7 @@ const routes: Routes = [
   { path: 'service-product-image-event', component: ServiceProductImageEvent },
   { path: 'service-product-image-event/:id', component: ServiceProductImageEventDetail },
   { path: 'catalog', component: Catalog },
+  { path: 'product-detail/:id', component: ProductDetailComponent },
 ];
 
 @NgModule({

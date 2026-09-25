@@ -1,4 +1,5 @@
 import { Component, signal } from '@angular/core';
+import { Router } from '@angular/router';
 import { Product } from '../classes/iProduct';
 import { ProductHttpService } from '../services/product-http-service';
 
@@ -13,7 +14,7 @@ export class ProductListCallHttpServiceComponent {
   minPrice: number = 0;
   maxPrice: number = 1000;
 
-  constructor(private _service: ProductHttpService) { }
+  constructor(private _service: ProductHttpService, private router: Router) { }
 
   ngOnInit(): void {
     this._service.getProductList().subscribe({
@@ -37,5 +38,9 @@ export class ProductListCallHttpServiceComponent {
         alert('Lỗi: ' + JSON.stringify(err));
       }
     });
+  }
+
+  viewDetail(id: number): void {
+    this.router.navigate(['/product-detail', id]);
   }
 }
